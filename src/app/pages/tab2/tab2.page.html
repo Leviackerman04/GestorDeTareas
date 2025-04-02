@@ -1,13 +1,25 @@
-<ion-header no-border >
-  <ion-toolbar color="dark">
-    <ion-title>
-      Terminadas
-    </ion-title>
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-title>Terminadas</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content color="dark">
+<ion-content color="light">
+  <!-- Mensaje de bienvenida -->
+  <div class="welcome-message">
+    <h2>✅ Tareas Terminadas</h2>
+    <p>¡Buen trabajo! Aquí están tus tareas completadas.</p>
+  </div>
 
-  <app-listas [terminada]="true"></app-listas>
-  
+  <!-- Lista de tareas -->
+  <div class="task-list">
+    <app-listas [terminada]="true"></app-listas>
+  </div>
+
+  <!-- Botón flotante para agregar tareas -->
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="success" (click)="agregarLista()">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 </ion-content>

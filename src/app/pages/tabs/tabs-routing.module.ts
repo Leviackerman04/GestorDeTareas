@@ -8,6 +8,14 @@ const routes: Routes = [
     component: TabsPage,
     children: [
       {
+        path: 'home',
+        loadChildren: () => import('../Home/home.module').then(m => m.HomeModule)
+      },
+      {
+        path:'agregar/:listaId',
+        loadChildren: () => import('../agregar/agregar.module').then(m => m.AgregarPageModule)
+      },
+      {
         path: 'tab1',
         children:[
           {
@@ -39,19 +47,20 @@ const routes: Routes = [
       },      
       {
         path: '',
-        redirectTo: '/tabs/tab1',
+        redirectTo: '/tabs/home',
         pathMatch: 'full'
       }
     ]
   },
   {
     path: '',
-    redirectTo: '/tabs/tab1',
+    redirectTo: '/tabs/home',
     pathMatch: 'full'
   }
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
+  exports: [RouterModule]
 })
 export class TabsPageRoutingModule {}

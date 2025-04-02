@@ -1,0 +1,40 @@
+<ion-header>
+    <ion-toolbar color="primary">
+      <ion-title>Tareas</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content color="light">
+    <!-- Mensaje de bienvenida -->
+    <div class="welcome-message">
+      <h2>👋 Bienvenid@, Admin</h2>
+      <p>¡Organiza tus tareas de manera eficiente!</p>
+    </div>
+  
+    <div class="card-container">
+        <ion-card class="card tareas-pendientes" (click)="irAPagina('tareas-pendientes')">
+          <ion-card-header>
+            <ion-card-title>Tareas Pendientes</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <p class="count">{{ tareasPendientes.length }}</p>
+          </ion-card-content>
+        </ion-card>
+        <ion-card class="card tareas-terminadas" (click)="irAPagina('tareas-terminadas')">
+          <ion-card-header>
+            <ion-card-title>Tareas Terminadas</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <p class="count">{{ tareasTerminadas.length }}</p>
+          </ion-card-content>
+        </ion-card>
+      </div>
+  
+  
+    <!-- Botón flotante para agregar tareas -->
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+      <ion-fab-button color="secondary" (click)="agregarLista()">
+        <ion-icon name="add"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+  </ion-content>

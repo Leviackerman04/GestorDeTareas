@@ -1,20 +1,25 @@
-<ion-header no-border [translucent]="true">
-  <ion-toolbar color="dark">
-    <ion-title>
-      Pendientes
-    </ion-title>
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Pendientes</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content color="dark">
+<ion-content color="light">
+  <!-- Mensaje de bienvenida -->
+  <div class="welcome-message">
+    <h2>📋 Tareas Pendientes</h2>
+    <p>Revisa y organiza tus tareas pendientes.</p>
+  </div>
 
-  <app-listas [terminada]="false"></app-listas>
+  <!-- Lista de tareas -->
+  <div class="task-list">
+    <app-listas [terminada]="false"></app-listas>
+  </div>
 
-  <ion-fab vertical="bottom" horizontal="end" slot="fixed" >
-    <ion-fab-button color="tertiary" (click)="agregarLista()">
+  <!-- Botón flotante para agregar tareas -->
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="secondary" (click)="agregarLista()">
       <ion-icon name="add"></ion-icon>
     </ion-fab-button>
   </ion-fab>
-
-
 </ion-content>

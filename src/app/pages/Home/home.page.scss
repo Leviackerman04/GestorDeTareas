@@ -1,0 +1,75 @@
+/* filepath: c:\Users\Usuario\Desktop\12vo Doceavo Semestre\Programacion Dispositivos Mobiles\Proyect\GestorDeTareas\src\app\pages\Home\home.page.scss */
+
+/* Estilo para el mensaje de bienvenida */
+.welcome-message {
+    text-align: center;
+    margin: 20px 0;
+    color: #4a4a4a;
+  
+    h2 {
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+  
+    p {
+      font-size: 1rem;
+      color: #fffdfd;
+    }
+  }
+  
+  /* Estilo para los contenedores de las tarjetas */
+  .card-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 10px;
+  }
+  
+  .card {
+    flex: 1;
+    margin: 0 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  
+    ion-card-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+  
+    .count {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #3880ff;
+    }
+  }
+  
+  .tareas-pendientes {
+    background: #ac8985;
+  }
+  
+  .tareas-terminadas {
+    background: #e0ffe4;
+  }
+  
+  /* Estilo para la lista de tareas */
+  .task-list {
+    margin: 20px 10px;
+  
+    ion-segment {
+      margin-bottom: 20px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+  
+    ion-segment-button {
+      font-size: 1rem;
+      font-weight: bold;
+    }
+  }
+  
+  /* Estilo para el botón flotante */
+  ion-fab-button {
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    --border-radius: 50%;
+  }
