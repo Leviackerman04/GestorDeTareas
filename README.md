@@ -14,6 +14,6 @@ Una pequeña aplicación en Ionic y Angular para gestionar tareas creada con Ion
   - si algun elemento no está marcado, la tarea seguirá pendiente 
     * se implementa un pipe para evaluar el estado de las tareas (pendientes | completadas)*
     
-4.- Eliminar elementos o tareas
+4.- Eliminar elementos o tareas.
 
 
