@@ -16,6 +16,4 @@ Una pequeña aplicación en Ionic y Angular para gestionar tareas creada con Ion
     
 4.- Eliminar elementos o tareas
 
-### Aquí les dejo un video que muestra la funcionaldad general de la aplicación
 
-https://user-images.githubusercontent.com/82334787/195247680-9271e618-935d-4cb6-9381-0f444ab2ac7d.mp4
